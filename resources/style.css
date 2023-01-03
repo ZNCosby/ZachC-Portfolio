@@ -1,0 +1,39 @@
+html {
+    font-family: 'Bitter', serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: #3C6E71;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+}
+header h2 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2em;
+    margin-left: 1em;
+    color: #FFFFFF;
+}
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: .33 .1;
+}
+header li {
+    display: inline-flex;
+    margin: .25em;
+    height: 100%;
+}
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
