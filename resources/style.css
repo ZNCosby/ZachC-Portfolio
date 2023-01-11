@@ -62,7 +62,7 @@ footer {
     display: flex;
     align-items: baseline;
     justify-content: right;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 footer h3 {
@@ -82,8 +82,70 @@ footer h3 {
 }
 
 /* Main Page */
-
-
+/* About Me */
+/* Skills */
+.skills {
+    width: 75%;
+    margin-left: auto; 
+    margin-right: 0;
+}
+.skills h1 {
+    margin-inline: 2em;
+}
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2em;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-inline: 2em;
+}
+.skills li {
+    list-style: none;
+    white-space: nowrap;
+}
+.skills i {
+    color: #392061;
+}
+.fa-html5:before {
+    content: "\f13b";
+}
+.fa-css3-alt:before {
+    content: "\f38b";
+}
+.fa-square-js:before {
+    content: "\f3b9";
+}
+.fa-react:before {
+    content: "\f41b";
+}
+.fa-markdown:before {
+    content: "\f60f";
+}
+.fa-fire:before {
+    content: "\f06d";
+}
+.fa-java:before {
+    content: "\f4e4";
+}
+.fa-python:before {
+    content: "\f3e2";
+}
+/* Resume */
+.resume {
+    margin-bottom: 7.5em;
+}
+.resume h1 {
+    margin-left: 3em;
+}
+.resume p {
+    margin-left: 4em;
+}
+.resume-file {
+    margin-left: 12.5%;
+    margin-right: auto;
+}
 
 
 /* Projects Page */

@@ -7,6 +7,7 @@
         <meta name="description" content="Zachary Cosby is a front-end developer, and this is his Portfolio website">
         <link rel="stylesheet" href="resources\style.css">
         <script src="resources\script.js" defer></script>
+        <script src="https://kit.fontawesome.com/584331c10a.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=PT+Sans:ital@1&display=swap" rel="stylesheet">
@@ -16,8 +17,9 @@
         <header>
             <h2>Zachary N. Cosby</h2>
             <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
@@ -25,15 +27,34 @@
 
         <main>
             <div class="about-me">
-
+                <a id="about-me"><h1>About Me:</h1></a>
             </div>
 
             <div class="skills">
+                <a id="skills"><h1>Skills:</h1></a>
+                <ul>
+                    <li><i class="icon fa-html5"></i> HTML</li>
+                    <li><i class="icon fa-css3-alt"></i> CSS</li>
+                    <li><i class="icon fa-square-js"></i> Javascript</li>
+                    <li><i class="icon fa-react"></i> React</li>
+                    <li><i class="icon fa-markdown"></i> Markdown</li>
+                    <li><i class="icon-other fa-fire"></i> Firebase</li>
+                    <li><i class="icon fa-java"></i> Java</li>
+                    <li><i class="icon fa-python"></i> Python</li>
+                    <li><i class="icon fa-github"></i> GitHub</li>
+                </ul>
+            </div>
 
+            <div class="resume">
+                <a id="resume"><h1>Resume:</h1></a>
+                <p>Here is my resume, formated to showcase all of my coding experience/expertise</p>
+                <iframe class="resume-file" src="resources\Zach_Resume.pdf" width="75%" height="750px"></iframe>
             </div>
         </main>
 
         <footer>
+            <h3>Check out my codecademy profile </h3>
+            <a href="https://www.codecademy.com/profiles/object0982224678" class="footer-link">here!</a>
         </footer>
     </body>
 </html>
