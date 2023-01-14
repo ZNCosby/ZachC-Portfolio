@@ -4,9 +4,10 @@ html {
     font-weight: bold;
 }
 body{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    color: #1A1B25;
+    color: #FFFFFF;
+    background-color: #1A1B25;
 }
 h1, h2, h3, h4 {
     font-family: 'PT Sans', sans-serif;
@@ -83,30 +84,42 @@ footer h3 {
 
 /* Main Page */
 /* About Me */
+.about-me {
+    margin-inline: 2em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.Zach-1 {
+    max-width: 25em;
+    width: 40%;
+    height: 30%;
+    border: .5em solid #3C6E71;
+    border-radius: .25em;
+}
 /* Skills */
 .skills {
-    width: 75%;
-    margin-left: auto; 
-    margin-right: 0;
-}
-.skills h1 {
+    width: 50%;
     margin-inline: 2em;
+    margin-left: auto;
+    margin-right: 0;
 }
 .skills ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2em;
+    column-gap: 5em;
     justify-items: center;
     align-items: center;
     justify-content: space-evenly;
-    margin-inline: 2em;
 }
 .skills li {
     list-style: none;
     white-space: nowrap;
 }
 .skills i {
-    color: #392061;
+    color: #4D2C82;
 }
 .fa-html5:before {
     content: "\f13b";
@@ -155,12 +168,16 @@ footer h3 {
 
 /* Contact Me Page */
 .contacts-html {
-    background: url("img/20200806_173425.jpg");
+    background: url("img/Zach-2.jpg");
     background-repeat: no-repeat;
     background-position: top;
 }
 .contacts-body {
+    background-color: transparent;
+}
+.contacts-div {
     width: 50%;
+    color: #1A1B25;
     background-color: #FFFFFF;
     border: 1em solid #392061;
     border-radius: 2em;
