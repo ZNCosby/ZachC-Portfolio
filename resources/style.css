@@ -82,6 +82,7 @@ footer h3 {
     color: #941B0C;
 }
 
+
 /* Main Page */
 /* About Me */
 .about-me {
@@ -89,7 +90,11 @@ footer h3 {
     margin-top: 2em;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 100%;
+}
+.about-me-p {
+    font-size: 1.25em;
+    flex-basis: 50%;
 }
 .Zach-1 {
     max-width: 25em;
@@ -97,13 +102,13 @@ footer h3 {
     height: 30%;
     border: .5em solid #3C6E71;
     border-radius: .25em;
+    margin-right: 4em;
 }
 /* Skills */
 .skills {
-    width: 50%;
+    width: 75%;
     margin-inline: 2em;
-    margin-left: auto;
-    margin-right: 0;
+    margin-bottom: 7.5em;
 }
 .skills ul {
     display: grid;
@@ -148,12 +153,7 @@ footer h3 {
 /* Resume */
 .resume {
     margin-bottom: 7.5em;
-}
-.resume h1 {
-    margin-left: 3em;
-}
-.resume p {
-    margin-left: 4em;
+    margin-left: 2em;
 }
 .resume-file {
     margin-left: 12.5%;
@@ -162,8 +162,52 @@ footer h3 {
 
 
 /* Projects Page */
+.header {
+    margin-left: 2em;
+}
+.project-grid {
+    margin-bottom: 20em;
+    margin-left: 6em;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5%;
+    column-gap: 2%;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.project {
+    width: 46.875em;
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: .5em solid #3C6E71;
+    border-radius: 5%;
+    color: #1A1B25;
+    transition: height 1s ease-in-out;
+}
+.hidden-p {
+    display: none;
+}
+.hidden-img {
+    width: 95%;
+    height: 0em;
+    transition: height 1s ease-in-out;
+}
 
-
+.project:hover {
+    height: 35em;
+}
+.project:hover .hidden-img{
+    height: 20em;
+}
+.project:hover .hidden-p{
+    display: block;
+}
 
 
 /* Contact Me Page */
