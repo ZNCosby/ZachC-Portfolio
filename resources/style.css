@@ -412,6 +412,7 @@ i {
         flex-direction: column;
     }
 }
+
 /* Tablet Screen Media Queries */
 @media (min-width: 480px) and (max-width: 1200px) {
     /* Projects Page */
@@ -428,8 +429,11 @@ i {
         width: 80%;
         margin-inline: .25em;
     }
-}
 
+    #logo {
+        display: none;
+    }
+}
 @media (min-height: 720px) and (max-height: 1090px) and (orientation: landscape){
     /* Contact Me Page */
     .contacts-html {
