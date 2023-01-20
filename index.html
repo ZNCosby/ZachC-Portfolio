@@ -26,46 +26,62 @@
         </header>
 
         <main>
-            <div class="about-me">
-                <div class="about-me-p">
-                    <a id="about-me"><h1>About Me:</h1></a>
-                    <p class="about-me-p1">Hello! my name is Zachary Cosby and I am a junior Front-End Developer!
-                        I am 23 years old, Type 1 Diabetic from the Springfield, MO area.
-                        I have many interests in coding but for the last couple of years I have taken a big focus on Front-End Web Development, I think solely because of everything that can be done wit CSS and JavaScript</p>
-                    
-                    <p class="about-me-p2">I have been coding for about 3 years now and I just love making websites.
-                        Another part of coding I am trying to learn in Server-Side Cybersecurity.
-                        I have programed in Java, and done some data science work in Python, and coded a videogame using C# as well.
-                        I enjoy learning new languages and figuring out exactly how to use them to their best application</p>
-
-                    <p class="about-me-p3">In my free time I like to do codecademy courses, play videogames, and absolutely destroy people on the pickleball court (I dream of being a pro).</p>
+            <div class="about-me-container">
+                <div class="about-me">
+                    <div class="about-me-p">
+                        <a id="about-me"><h1>About Me:</h1></a>
+                        <p class="about-me-p1">Hello! my name is Zachary Cosby and I am a junior Front-End Developer!
+                            I am 23 years old, Type 1 Diabetic from the Springfield, MO area.
+                            I have many interests in coding but for the last couple of years I have taken a big focus on Front-End Web Development, I think solely because of everything that can be done wit CSS and JavaScript</p>
+                        
+                        <p class="about-me-p2">I have been coding for about 3 years now and I just love making websites.
+                            Another part of coding I am trying to learn in Server-Side Cybersecurity.
+                            I have programed in Java, and done some data science work in Python, and coded a videogame using C# as well.
+                            I enjoy learning new languages and figuring out exactly how to use them to their best application</p>
+    
+                        <p class="about-me-p3">In my free time I like to do codecademy courses, play videogames, and absolutely destroy people on the pickleball court (I dream of being a pro).</p>
+                    </div>
+                    <img id="Zach-1" src="resources\img\Zach-1.jpg" alt="Picture of Zach Cosby at The Crescent Hotel in Eureka Springs" onclick="imageClick()">
                 </div>
-                <img class="Zach-1" src="resources\img\Zach-1.jpg" alt="Picture of Zach Cosby at The Crescent Hotel in Eureka Springs">
+            </div>
+            
+            <div class="skills-container">
+                <div class="wave-1">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+                <div class="skills">
+                    <a id="skills"><h1>Skills:</h1></a>
+                    <ul>
+                        <li><i class="icon fa-html5"></i> HTML</li>
+                        <li><i class="icon fa-css3-alt"></i> CSS</li>
+                        <li><i class="icon fa-square-js"></i> Javascript</li>
+                        <li><i class="icon fa-react"></i> React</li>
+                        <li><i class="icon fa-markdown"></i> Markdown</li>
+                        <li><i class="icon-other fa-fire"></i> Firebase</li>
+                        <li><i class="icon fa-java"></i> Java</li>
+                        <li><i class="icon fa-python"></i> Python</li>
+                        <li><i class="icon fa-github"></i> GitHub</li>
+                    </ul>
+                </div>
+                <div class="wave-2">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    </svg>
+                </div>
             </div>
 
-            <div class="skills">
-                <a id="skills"><h1>Skills:</h1></a>
-                <ul>
-                    <li><i class="icon fa-html5"></i> HTML</li>
-                    <li><i class="icon fa-css3-alt"></i> CSS</li>
-                    <li><i class="icon fa-square-js"></i> Javascript</li>
-                    <li><i class="icon fa-react"></i> React</li>
-                    <li><i class="icon fa-markdown"></i> Markdown</li>
-                    <li><i class="icon-other fa-fire"></i> Firebase</li>
-                    <li><i class="icon fa-java"></i> Java</li>
-                    <li><i class="icon fa-python"></i> Python</li>
-                    <li><i class="icon fa-github"></i> GitHub</li>
-
-                </ul>
+            <div class="resume-container">
+                <div class="resume">
+                    <a id="resume"><h1>Resume:</h1></a>
+                    <p>Here is my resume, formated to showcase all of my coding experience/expertise</p>
+                    <iframe class="resume-file" src="resources\Zach_Resume.pdf" width="75%" height="750px"></iframe>
+                </div>
             </div>
 
-            <div class="resume">
-                <a id="resume"><h1>Resume:</h1></a>
-                <p>Here is my resume, formated to showcase all of my coding experience/expertise</p>
-                <iframe class="resume-file" src="resources\Zach_Resume.pdf" width="75%" height="750px"></iframe>
-            </div>
+            <img id="logo" src="resources\img\Logo.png" alt="ZC logo">
         </main>
-
         <footer>
             <h3>Check out my codecademy profile </h3>
             <a href="https://www.codecademy.com/profiles/object0982224678" class="footer-link">here!</a>

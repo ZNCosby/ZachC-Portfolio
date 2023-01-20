@@ -2,12 +2,17 @@
 html {
     font-family: 'Bitter', serif;
     font-weight: bold;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     margin: 0 auto;
     padding: 0;
     color: #FFFFFF;
     background-color: #1A1B25;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 h1, h2, h3, h4 {
     font-family: 'PT Sans', sans-serif;
@@ -19,7 +24,7 @@ a {
 
 
 header {
-    width: 100%;
+    min-width: 100%;
     display: flex;
     background-color: #3C6E71;
     align-items: center;
@@ -57,7 +62,7 @@ header a:hover {
 
 
 footer {
-    width: 100%;
+    min-width: 100%;
     background-color: #392061;
     color: #FFFFFF;
     display: flex;
@@ -85,6 +90,11 @@ footer h3 {
 
 /* Main Page */
 /* About Me */
+.about-me-container {
+    width: 100%;
+    position: relative;
+    background-color: #1A1B25
+}
 .about-me {
     margin-inline: 2em;
     margin-top: 2em;
@@ -96,7 +106,7 @@ footer h3 {
     font-size: 1.25em;
     flex-basis: 50%;
 }
-.Zach-1 {
+#Zach-1 {
     max-width: 25em;
     width: 40%;
     height: 30%;
@@ -105,10 +115,62 @@ footer h3 {
     margin-right: 4em;
 }
 /* Skills */
+.skills-container {
+    position: relative;
+    width: 100%;
+    background-color: #3A3C52;
+    z-index: -1;
+    margin-top: 2em;
+    padding-block: 6em;
+}
+.wave-1 {
+    margin-top: -5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 104px;
+    transform: rotateY(180deg);
+}
+
+.wave-1 .shape-fill {
+    fill: #1A1B25;
+}
+.wave-2 {
+    margin-bottom: -5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-2 svg {
+    position: relative;
+    display: block;
+    width: calc(139% + 1.3px);
+    height: 144px;
+}
+
+.wave-2 .shape-fill {
+    fill: #0F1016;
+}
 .skills {
+    position: relative;
     width: 75%;
     margin-inline: 2em;
     margin-bottom: 7.5em;
+    z-index: 2;
 }
 .skills ul {
     display: grid;
@@ -124,7 +186,7 @@ footer h3 {
     white-space: nowrap;
 }
 .skills i {
-    color: #4D2C82;
+    color: #3C6E71;
 }
 .fa-html5:before {
     content: "\f13b";
@@ -151,6 +213,13 @@ footer h3 {
     content: "\f3e2";
 }
 /* Resume */
+.resume-container {
+    width: 100%;
+    background-color: #0F1016;
+    padding-top: 2em;
+    padding-bottom: 5em;
+    position: relative;
+}
 .resume {
     margin-bottom: 7.5em;
     margin-left: 2em;
@@ -160,10 +229,17 @@ footer h3 {
     margin-right: auto;
 }
 
+/* Moving Logo */
+#logo {
+    position: absolute;
+    width: 4em;
+    height: 4em;
+}
 
 /* Projects Page */
 .header {
     margin-left: 2em;
+    margin-top: 4em;
 }
 .project-grid {
     margin-bottom: 20em;
@@ -188,7 +264,7 @@ footer h3 {
     border: .5em solid #3C6E71;
     border-radius: 5%;
     color: #1A1B25;
-    transition: height 1s ease-in-out;
+    transition: height .75s ease-out;
 }
 .hidden-p {
     display: none;
@@ -198,7 +274,6 @@ footer h3 {
     height: 0em;
     transition: height 1s ease-in-out;
 }
-
 .project:hover {
     height: 35em;
 }
@@ -273,4 +348,39 @@ i {
 }
 .fa-square-envelope::before {
     content: "\f199"
+}
+
+
+/* Phone Screen Media Queries */
+@media (max-width: 480px){
+    header h2 {
+        font-size: 1em;
+    }
+    header a {
+        font-size: .75em;
+    }
+    /* Main Page */
+    /* About Me */
+    .about-me {
+        flex-direction: column;
+        margin-inline: 10px;
+        align-items: center;
+    }
+    #Zach-1 {
+        width: 75%;
+    }
+    /* Skills */
+    .skills ul {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* Resume */
+    .resume {
+        margin-left: 10px;
+    }
+    .resume-file {
+        margin-left: 5px;
+        width: 95%;
+    }
+    /* Projects Page */
+    /* Contact Me Page */
 }
