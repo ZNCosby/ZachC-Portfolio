@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+        <script src="resources\projects.js" defer></script>
         <title>Projects</title>
     </head>
     <body>
@@ -25,34 +26,32 @@
         </header>
 
         <main>
-            <h1 class="header">Projects:</h1>
-            <div class="project-container">
-                <div class="project-grid">
-                    <div class="project project1">
-                        <h2>Folders Unlimited</h2>
-                        <p class="hidden-p">One of my Codecademy projects, I designed a website using HTML and flexbox CSS</p>
-                        <img class="hidden-img" src="resources\img\Folders-Unlimited.png" alt="picture of the Folders Unlimited website">
-                    </div>
-                    <div class="project project2">
-                        <h2>Pickleball Website</h2>
-                        <p class="hidden-p">My biggest project to date, I used my love of pickleball to design a website that uses HTML, CSS, had a two step feature, and used React</p>
-                        <img class="hidden-img" src="resources\img\Pickleball-Website.png" alt="Picture of the Pickleball website">
-                    </div>
-                    <div class="project project3">
-                        <h2>Video Game</h2>
-                        <p class="hidden-p">This video game was coded in C# using the Unity game engine</p>
-                        <img class="hidden-img" src="resources\img\VideoGame.png" alt="Picture of the Video Game">
-                    </div>
-                    <div class="project project4">
-                        <h2>Fotomatic</h2>
-                        <p class="hidden-p">One of my Codecademy projects, just a regular website for a photography company using CSS and HTML</p>
-                        <img class="hidden-img" src="resources\img\Fotomatic.png" alt="Picture of Fotomatic website">
-                    </div>
-                    <div class="project project5">
-                        <h2>Happy Birthday Website</h2>
-                        <p class="hidden-p">For my girlfriends birthday, I decided to make her a website that uses the minimum amount of HTML and runs almost completely on Javascript and CSS, and has a spotify player embeded into the page</p>
-                        <img class="hidden-img" src="resources\img\Birthday-Website.png" alt="Picture of Bailey's Birthday Website">
-                    </div>
+            <div id="project-container" data-mouse-down-at="0" data-prev-percentage="0">
+                <div class="project">
+                    <img src="resources\img\Folders-Unlimited.png" alt="picture of the Folders Unlimited website" draggable="false">
+                    <h2>Folders Unlimited</h2>
+                    <p>Folders Unlimited website is a side project I made to showcase my ability to use modern CSS in both flexbox and grid</p>
+                </div>
+                <div class="project">
+                    <img src="resources\img\Pickleball-Website.png" alt="Picture of the Pickleball website" draggable="false">
+                    <h2>Pickleball Website</h2>
+                    <p>this pickleball website I made for my web-development class. it uses ReactJS, HTML, and modern CSS elements</p>
+                </div>
+                <div class="project">
+                    <img src="resources\img\VideoGame.png" alt="Picture of the Video Game" draggable="false">
+                    <h2>All Out of Bird Seed!</h2>
+                    <p>All Out of Bird Seed! is video game I am creating for my neice and nephew that uses C# and the unity game engine
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="resources\img\Simple-Reddit.png" alt="Picture of Simple Reddit" draggable="false">
+                    <h2>Simple Reddit</h2>
+                    <p>Simple Reddit is a ReactJS application that uses ReactRedux and the Reddit API to simulate a reddit app</p>
+                </div>
+                <div class="project">
+                    <img src="resources\img\Birthday-Website.png" alt="Picture of Bailey's Birthday Website" draggable="false">
+                    <h2>Bailey's Birthday Website</h2>
+                    <p>Website I created for my girlfriend using only CSS, Javascript and HTML canvas</p>
                 </div>
             </div>
         </main>
